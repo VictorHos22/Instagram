@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        tools:context=".register.view.RegisterAdmActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/icon_olimpik" />
+
+        <TextView
+            style="@style/textViewTitle"
+            android:text="@string/register_gym" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_name"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="0dp"
+                style="@style/editText"
+                android:hint="@string/full_name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_cpf"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_cpf"
+                style="@style/editText"
+                android:hint="@string/hint_cpf"
+                android:layout_marginBottom="0dp"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_phone_number"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_phone_number"
+                style="@style/editText"
+                android:hint="@string/hint_phone_number"
+                android:layout_marginBottom="0dp"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_email"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_email"
+                style="@style/editText"
+                android:hint="@string/email"
+                android:layout_marginBottom="0dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_cnpj"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_cnpj"
+                style="@style/editText"
+                android:inputType="number"
+                android:hint="@string/cnpj"
+                android:layout_marginBottom="0dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_business_name"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_business_name"
+                style="@style/editText"
+                android:hint="@string/business_name"
+                android:layout_marginBottom="0dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_fantasy_name"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_fantasy_name"
+                style="@style/editText"
+                android:hint="@string/fantasy_name"
+                android:layout_marginBottom="0dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_cep"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_cep"
+                style="@style/editText"
+                android:hint="@string/postal_code"
+                android:inputType="number"
+                android:layout_marginBottom="0dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_address"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_address"
+                style="@style/editText"
+                android:hint="@string/address"
+                android:layout_marginBottom="0dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_state"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_state"
+                style="@style/editText"
+                android:hint="@string/state"
+                android:layout_marginBottom="0dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_city"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_city"
+                style="@style/editText"
+                android:hint="@string/city"
+                android:layout_marginBottom="0dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_password"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_password"
+                style="@style/editText"
+                android:inputType="textPassword"
+                android:hint="@string/hint_password"
+                android:layout_marginBottom="0dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_adm_edit_input_repassword"
+            style="@style/editTextInput"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_adm_edit_repassword"
+                style="@style/editText"
+                android:hint="@string/re_password"
+                android:inputType="textPassword"
+                android:layout_marginBottom="0dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.example.olympik.common.view.LoadingButton
+            android:id="@+id/register_adm_btn_next"
+            style="@style/button_loading"
+            android:padding="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:text="@string/btn_sign_up"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sv"
+            />
+
+        <Button
+            android:id="@+id/register_adm_btn_back"
+            style="@style/button_common"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/btn_turn_back" />
+
+    </LinearLayout>
+
+
+</ScrollView>
